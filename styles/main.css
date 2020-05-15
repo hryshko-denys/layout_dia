@@ -17,6 +17,9 @@
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .header-arrow {
   content: "";
@@ -37,6 +40,9 @@
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 html,
 body,
@@ -215,6 +221,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .button {
   position: relative;
@@ -261,6 +270,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .slider__img {
   display: block;
@@ -357,6 +369,29 @@ textarea {
       max-height: 350px;
       text-align: center; } }
 
+.header-arrow {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(); }
+
+.section-name, .process__name, .approach__name, .testimonials__name {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+
+.middle-text, .about-us__text, .vision__text, .contacts__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
+
 .experience {
   min-height: 759px;
   padding: 128px 50px;
@@ -373,6 +408,13 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  @media screen and (max-width: 860px) {
+    .experience {
+      padding: 50px; }
+      .experience__headline {
+        font-size: 36px; }
+      .experience__skills {
+        gap: 50px; } }
 
 .skill {
   text-align: center; }
@@ -416,6 +458,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .process {
   display: -webkit-box;
@@ -425,7 +470,7 @@ textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1600px;
-  height: 759px;
+  min-height: 759px;
   padding: 0 227px;
   color: black; }
   .process__explanation {
@@ -445,12 +490,38 @@ textarea {
   .process__cards {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, 264px);
+    grid-template-columns: repeat(2, 264px);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 560px;
-    max-height: 760px; }
+    max-width: 560px; }
+  @media screen and (max-width: 1410px) {
+    .process {
+      padding: 0 150px; } }
+  @media screen and (max-width: 1280px) {
+    .process {
+      padding: 0;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .process__explanation {
+        margin-bottom: 50px; }
+      .process__cards {
+        max-width: 100%;
+        gap: 30px 150px; } }
+  @media screen and (max-width: 730px) {
+    .process {
+      min-height: 759px; }
+      .process__explanation {
+        margin: 25px; }
+      .process__cards {
+        gap: 30px;
+        grid-template-columns: 264px;
+        margin-bottom: 25px; } }
 
 .header-arrow {
   content: "";
@@ -471,6 +542,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .card {
   position: relative;
@@ -483,12 +557,8 @@ textarea {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s; }
-  .card:first-child {
-    -webkit-transform: translateY(130px);
-            transform: translateY(130px); }
-  .card:last-child {
-    -webkit-transform: translateY(-130px);
-            transform: translateY(-130px); }
+  .card:nth-child(odd) {
+    top: 130px; }
   .card__number {
     margin: 0 0 26px 12px;
     font-weight: 600;
@@ -520,6 +590,9 @@ textarea {
     font-weight: 600;
     font-size: 15px;
     color: #334563; }
+  @media screen and (max-width: 730px) {
+    .card:nth-child(odd) {
+      top: 0; } }
 
 .button-arrow {
   position: relative;
@@ -576,10 +649,12 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .approach {
   position: relative;
-  top: -215px;
   min-height: 976px;
   margin-left: 121px;
   padding: 204px;
@@ -661,6 +736,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .testimonials {
   min-height: 1000px;
@@ -679,6 +757,9 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  @media screen and (max-width: 500px) {
+    .testimonials {
+      padding: 25px; } }
 
 .header-arrow {
   content: "";
@@ -699,6 +780,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .person {
   height: 494px;
@@ -791,6 +875,29 @@ textarea {
     text-transform: uppercase;
     color: #c0cdd7; }
 
+.header-arrow {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(); }
+
+.section-name, .process__name, .approach__name, .testimonials__name {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 16px; }
+
+.middle-text, .about-us__text, .vision__text, .contacts__link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
+
 .vision {
   position: relative;
   z-index: 1;
@@ -817,15 +924,20 @@ textarea {
   .vision__headline {
     position: relative;
     z-index: 1;
+    max-width: 80%;
+    margin-bottom: 24px;
     font-size: 52px;
     font-weight: 600;
-    color: #253757;
-    margin-bottom: 24px; }
+    color: #253757; }
   .vision__text {
     position: relative;
     z-index: 1;
+    max-width: 80%;
     color: #6c788b;
     margin-bottom: 64px; }
+  @media screen and (max-width: 800px) {
+    .vision__headline {
+      font-size: 32px; } }
 
 .header-arrow {
   content: "";
@@ -846,6 +958,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .oval {
   -webkit-transition: background-color 0.5s ease-in, -webkit-transform 1.5s;
@@ -1027,18 +1142,23 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 180px 0 0 227px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 180px 150px 0 227px;
   min-height: 740px;
   background-color: #008aff;
   border-radius: 0 200px 0 0; }
   .contacts__send-message {
-    max-width: 460px;
-    margin-right: 226px; }
+    max-width: 460px; }
   .contacts__heading {
     margin-bottom: 56px;
     font-size: 32px; }
@@ -1091,6 +1211,17 @@ textarea {
     background-image: url(../images/socials/social2.svg); }
   .contacts__icon:nth-child(3)::after {
     background-image: url(../images/socials/social3.svg); }
+  @media screen and (max-width: 1150px) {
+    .contacts {
+      padding: 50px; } }
+  @media screen and (max-width: 910px) {
+    .contacts {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .contacts__send-message {
+        padding-bottom: 50px; } }
 
 .form {
   display: -webkit-box;
@@ -1147,6 +1278,9 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: 600; }
+  @media screen and (max-width: 800px) {
+    .middle-text .middle-text, .about-us__text .middle-text, .vision__text .middle-text, .contacts__link .middle-text, .middle-text .about-us__text, .about-us__text .about-us__text, .vision__text .about-us__text, .contacts__link .about-us__text, .middle-text .vision__text, .about-us__text .vision__text, .vision__text .vision__text, .contacts__link .vision__text, .middle-text .contacts__link, .about-us__text .contacts__link, .vision__text .contacts__link, .contacts__link .contacts__link {
+      font-size: 16px; } }
 
 .footer {
   background-color: #008aff; }
