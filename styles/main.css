@@ -221,15 +221,15 @@ textarea {
   @media screen and (max-width: 1000px) {
     .header__container {
       padding: 20px;
-      height: 100vh; }
+      height: 425px; }
     .header__logo {
-      width: 30px;
-      height: 17px;
-      margin-right: 78px; }
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8); }
     .header__top-nav, .header__slider {
       display: none; }
     .header__description {
-      margin: 250px auto;
+      text-align: center;
+      margin: 50px auto;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
@@ -265,14 +265,12 @@ textarea {
     padding: 3px; }
 
 .nav--mobile {
-  width: 50%;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase; }
   .nav--mobile__list {
-    width: 100vw;
-    height: 60vh;
+    width: 60vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,6 +288,9 @@ textarea {
     display: block;
     width: 100%;
     padding: 3px; }
+  @media screen and (max-width: 500px) {
+    .nav--mobile {
+      font-size: 22px; } }
 
 .description__headline {
   font-weight: 600;
@@ -302,9 +303,9 @@ textarea {
   margin-bottom: 83px;
   font-size: 18px; }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 860px) {
   .description__text {
-    display: none; }
+    text-align: center; }
   .description__headline {
     font-size: 32px; } }
 
