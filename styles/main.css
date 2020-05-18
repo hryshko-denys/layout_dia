@@ -1451,13 +1451,12 @@ input:-webkit-autofill {
           flex-direction: column; }
   .form__input {
     width: 100%;
-    padding-bottom: 17px;
+    padding-bottom: 17px 0;
     margin-bottom: 66px;
     font-weight: 600;
     font-size: 15px;
     color: #fff;
-    -webkit-box-shadow: 0 1px 0 #fff;
-            box-shadow: 0 1px 0 #fff;
+    border-bottom: 1px solid #fff;
     -webkit-transition: border-bottom-width 0.3s;
     transition: border-bottom-width 0.3s; }
     .form__input::-webkit-input-placeholder {
