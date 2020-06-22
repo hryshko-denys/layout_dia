@@ -80,21 +80,21 @@ textarea {
   overflow: hidden; }
 
 /*to fix autofill background*/
-@-webkit-keyframes autofill {
-  to {
-    color: inherit;
-    background: transparent; } }
-
 input:-webkit-autofill {
-  -webkit-animation-name: autofill;
-  -webkit-animation-fill-mode: both; }
+  -webkit-text-fill-color: #fff !important; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #008aff inset !important; }
 
 .link {
   -webkit-transition: color 0.3s, -webkit-transform 0.3s;
   transition: color 0.3s, -webkit-transform 0.3s;
   transition: color 0.3s, transform 0.3s;
   transition: color 0.3s, transform 0.3s, -webkit-transform 0.3s; }
-  .link:hover, .link:visited {
+  .link:hover {
     color: #ff9c8e; }
   .link:focus {
     -webkit-transform: scale(1.1);
@@ -361,69 +361,80 @@ input:-webkit-autofill {
     .about-us__text, .vision__text, .contacts__link {
       font-size: 16px; } }
 
-.slider__img {
-  display: block;
-  max-width: 43vw; }
-
-.slider__description {
-  position: absolute;
-  bottom: 48px;
-  left: 144px; }
-
-.slider__headline {
-  font-size: 13px;
-  line-height: 19px;
-  letter-spacing: 3px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 8px; }
-
-.slider__button {
-  position: absolute;
-  left: -100px;
-  top: 19px;
-  display: block;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background-color: #fff; }
-
-.slider__button--right {
-  left: -60px; }
-
-.slider__button--right::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 9px;
-  height: 9px;
-  background-image: url(../images/slider/right.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.slider__button--left::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 9px;
-  height: 9px;
-  background-image: url(../images/slider/left.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.slider__text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 140%;
-  max-width: 264px; }
+.slider {
+  overflow: hidden; }
+  .slider__carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 687px;
+    -webkit-transition: -webkit-transform ease-in 0.4s;
+    transition: -webkit-transform ease-in 0.4s;
+    transition: transform ease-in 0.4s;
+    transition: transform ease-in 0.4s, -webkit-transform ease-in 0.4s; }
+  .slider__carousel-item {
+    border-radius: 200px 0 0; }
+  .slider__img {
+    display: block;
+    max-width: 43vw;
+    border-radius: inherit; }
+  .slider__description {
+    position: absolute;
+    bottom: 48px;
+    left: 144px; }
+  .slider__headline {
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px; }
+  .slider__button {
+    position: absolute;
+    left: -100px;
+    top: 19px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #fff; }
+  .slider__button:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    cursor: pointer; }
+  .slider__button--right {
+    left: -60px; }
+  .slider__button--right::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/slider/right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .slider__button--left::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-image: url(../images/slider/left.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  .slider__text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 140%;
+    max-width: 264px; }
 
 .process__name, .approach__name, .testimonials__name {
   font-size: 13px;
